@@ -1,0 +1,18 @@
+.post {
+
+	&__list {
+		display: block;
+		width: 100%;
+		margin: auto;
+	}
+	&__item {
+		display: block;
+		width: 250px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 20px;
+	}
+	&__wrap {
+		border: 1px solid red;
+	}
+}
