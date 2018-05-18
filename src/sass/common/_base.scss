@@ -1,11 +1,12 @@
-*::-webkit-input-placeholder	{font-size: 20px; color: rgba(255, 255, 255, 1);opacity: 1; transition: opacity 0.3s ease;text-overflow:ellipsis;}
-*::-moz-placeholder				{font-size: 20px; color: rgba(255, 255, 255, 1);opacity: 1; transition: opacity 0.3s ease;text-overflow:ellipsis;}
-*:-moz-placeholder				{font-size: 20px; color: rgba(255, 255, 255, 1);opacity: 1; transition: opacity 0.3s ease;text-overflow:ellipsis;}
-*:-ms-input-placeholder			{font-size: 20px; color: rgba(255, 255, 255, 1);opacity: 1; transition: opacity 0.3s ease;text-overflow:ellipsis;}
-*:focus::-webkit-input-placeholder	{opacity: 0;}
-*:focus::-moz-placeholder			{opacity: 0;}
-*:focus:-moz-placeholder			{opacity: 0;}
-*:focus:-ms-input-placeholder		{opacity: 0;}
+*::placeholder	{
+	font-size: 20px; 
+	color: rgba(255, 255, 255, 1);
+	opacity: 1; 
+	transition: opacity 0.3s ease;
+	text-overflow:ellipsis;
+}
+*:focus::placeholder {opacity: 0;}
+
 *,:before, :after {
     box-sizing: border-box;
 	margin:0;
@@ -56,7 +57,7 @@ img {
 	outline: none;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: $RobotoCond;
+	font-family: $fontMain;
 }
 select {   
     appearance: none;
@@ -90,12 +91,12 @@ select::-ms-expand {
   -webkit-appearance: none;
 }
 html {
-	font-size: 18px;
+	font-size: $fz16;
 }
 body {
-	font-family: $Roboto;
+	font-family: $fontMain;
 	font-size: 1rem;
-	font-weight: 400;	
+	font-weight: normal;	
 	color: #333;
 	line-height: 1.3;
 	position: relative;

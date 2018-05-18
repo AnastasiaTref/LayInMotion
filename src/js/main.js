@@ -6,6 +6,7 @@ $(document).ready(function($) {
 	$masonaryContainer.masonry({
 		columnWidth: '.post__item',
     	itemSelector: '.post__item',
-    	fitWidth: true
+    	fitWidth: true,
+    	gutter: 20
 	})
 })

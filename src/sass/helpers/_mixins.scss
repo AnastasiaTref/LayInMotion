@@ -14,82 +14,104 @@
 
 /*==========  Desktop First Method  ==========*/
 
-/* Large Devices, Wide Screens */
-@mixin max1200 {
-	@media(max-width: 1200px) {
-		@content;
-	}	  
-}
+	/* Large Devices, Wide Screens */
+	@mixin max1200 {
+		@media(max-width: 1200px) {
+			@content;
+		}	  
+	}
 
-/* Medium Devices, Desktops */
-@mixin max992 {
-	@media(max-width: 992px) {
-		@content;
-	}	  
-}
+	/* Medium Devices, Desktops */
+	@mixin max992 {
+		@media(max-width: 992px) {
+			@content;
+		}	  
+	}
 
-/* Small Devices, Tablets */
-@mixin max768 {
-	@media(max-width: 768px) {
-		@content;
-	}	  
-}
+	/* Small Devices, Tablets */
+	@mixin max768 {
+		@media(max-width: 768px) {
+			@content;
+		}	  
+	}
 
-/* Extra Small Devices, Phones */
-@mixin max480 {
-	@media(max-width: 480px) {
-		@content;
-	}	  
-}
-/* Custom, iPhone Retina */
-@mixin max320 {
-	@media(max-width: 320px) {
-		@content;
-	}	  
-}
+	/* Extra Small Devices, Phones */
+	@mixin max480 {
+		@media(max-width: 480px) {
+			@content;
+		}	  
+	}
+	/* Custom, iPhone Retina */
+	@mixin max320 {
+		@media(max-width: 320px) {
+			@content;
+		}	  
+	}
 
 
 /*==========  Mobile First Method  ==========*/
 
-/* Custom, iPhone Retina */
-@mixin min320 {
-	@media(min-width: 320px) {
-		@content;
-	}	  
-}
-/* Extra Small Devices, Phones */
-@mixin min480 {
-	@media(min-width: 480px) {
-		@content;
-	}	  
-}
-/* Small Devices, Tablets */
-@mixin min768 {
-	@media(min-width: 768px) {
-		@content;
-	}	  
-}
+	/* Custom, iPhone Retina */
+	@mixin min320 {
+		@media(min-width: 320px) {
+			@content;
+		}	  
+	}
+	/* Extra Small Devices, Phones */
+	@mixin min480 {
+		@media(min-width: 480px) {
+			@content;
+		}	  
+	}
+	/* Small Devices, Tablets */
+	@mixin min768 {
+		@media(min-width: 768px) {
+			@content;
+		}	  
+	}
 
-@mixin min800 {
-	@media(min-width: 800px) {
-		@content;
-	}	  
-}
-/* Medium Devices, Desktops */
-@mixin min992 {
-	@media(min-width: 992px) {
-		@content;
-	}	  
-}
-/* Large Devices, Wide Screens */
-@mixin min1200 {
-	@media(min-width: 1200px) {
-		@content;
-	}	  
-}
-@mixin min1800 {
-	@media(min-width: 1800px) {
-		@content;
-	}	  
-}
+	@mixin min800 {
+		@media(min-width: 800px) {
+			@content;
+		}	  
+	}
+	/* Medium Devices, Desktops */
+	@mixin min992 {
+		@media(min-width: 992px) {
+			@content;
+		}	  
+	}
+	/* Large Devices, Wide Screens */
+	@mixin min1200 {
+		@media(min-width: 1200px) {
+			@content;
+		}	  
+	}
+	@mixin min1800 {
+		@media(min-width: 1800px) {
+			@content;
+		}	  
+	}
 
+
+/*==========  Styles for IE10 and IE11  ==========*/
+
+	@mixin -ms1011 {
+	    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	        @content;
+	    }
+	}
+
+	//  example styles for IE10 and IE11 width media requests:/
+
+	//  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 768px){
+	//       styles for IE10 IE11 with max width 768px
+	//   }
+
+/*==========  Microsoft Edge Browser 12+ (All) - @supports method ==========*/
+	
+	@mixin edge {
+		@supports (-ms-ime-align:auto) {
+	  		@content;
+		}
+	}
