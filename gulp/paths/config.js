@@ -22,6 +22,27 @@ const path = {
         img: 'images', // Папка с изображениями
         tasks: 'gulp/tasks', // Папка с gulp тасками
 
+        jsLibs() {
+
+	    	var path = this.folder + '/' + this.libs + '/';
+
+	        return [
+	            //path + 'jquery-3.3.1.min.js',
+                path + 'imagesloaded.pkgd.min.js',
+	            path + 'noframework.waypoints.min.js',
+	            //path + 'isotope.pkgd.min.js',
+	            path + 'masonry.pkgd.min.js',
+	            path + 'picturefill.min.js',
+	        ];               
+	    },
+        cssLibs() {
+
+            var path = this.folder + '/' + this.libs + '/';
+
+            return [
+                path + 'animate.css'
+            ]
+        }
     },
 
     temp: { // Пути готовых файлов
@@ -46,19 +67,7 @@ const path = {
         desktop: 'desktop', // В эту папку будет складываться десктопная версия
         sep: 'asia', // В эту папку будут складываться папки с мобильной и десктопной версией
         resp: 'responsive', // В эту папку будет складываться адаптивная версия
-    },
-
-    /*cssLibs() {
-        return [
-            './src/magnific-popup.css'
-        ]
-    }
-    jsLibs() {
-        return [
-            './src/libs/jquery-3.2.1.min.js',
-            './src/libs/jquery.magnific-popup.js'
-        ]               
-    },*/
+    }    
 };
 
 

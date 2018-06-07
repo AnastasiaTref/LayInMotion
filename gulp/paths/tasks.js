@@ -20,6 +20,7 @@ module.exports = [
   './gulp/tasks/build.img.js',
   './gulp/tasks/build.scripts.js',
   './gulp/tasks/build.html.js',
+  './gulp/tasks/build.fonts.js',
   './gulp/tasks/build.css.js',
   './gulp/tasks/dist.clean.js',
   './gulp/tasks/del-comments.js'

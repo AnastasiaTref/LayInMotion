@@ -1,5 +1,7 @@
 'use strict';
 
+var mmq = require('gulp-merge-media-queries');
+
 module.exports = function() {
 
 	$.gulp.task('sass', function() {
@@ -10,9 +12,13 @@ module.exports = function() {
 	      		errLogToConsole: true
 			})).on('error', $.pl.notify.onError({title: 'Style'}))
 			.pipe($.pl.autoprefixer({ 
-		        browsers: ['last 15 versions', '> 1%', 'ie 8', 'ie 7'], 
-		        cascade: true
-		    }))
+			    browsers: ['last 15 versions', '> 1%', 'ie 8', 'ie 7'], 
+			    cascade: true
+			}))
+			.pipe(mmq({ 
+				log: true,
+				//use_external: true
+			}))
 		    .pipe($.pl.sourcemaps.write())
 			.pipe($.gulp.dest( `./${$.path.temp.folder}/${$.path.temp.css}` ))
 	})

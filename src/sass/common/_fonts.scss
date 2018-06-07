@@ -1,11 +1,19 @@
-/* @font-face {
-    font-family: 'Bauhaus93';
-    src: url('../fonts/bauhaus93/Bauhaus93.eot');
-    src: url('../fonts/bauhaus93/Bauhaus93.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/bauhaus93/Bauhaus93.woff2') format('woff2'),
-        url('../fonts/bauhaus93/Bauhaus93.woff') format('woff'),
-        url('../fonts/bauhaus93/Bauhaus93.ttf') format('truetype');
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon/icomoon.eot?s4bp2');
+    src: url('../fonts/icomoon/icomoon.eot?s4bp2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?s4bp2') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?s4bp2') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?s4bp2#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
- */
+@font-face {
+    font-family: "StalinistOneRegular";
+    src: url("../fonts/StalinistOne/StalinistOneRegular/StalinistOneRegular.eot");
+    src: url("../fonts/StalinistOne/StalinistOneRegular/StalinistOneRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/StalinistOne/StalinistOneRegular/StalinistOneRegular.woff") format("woff"),
+    url("../fonts/StalinistOne/StalinistOneRegular/StalinistOneRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

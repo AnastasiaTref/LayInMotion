@@ -4,8 +4,10 @@ module.exports = function() {
 
     $.gulp.task('watch', function() {
 
-        $.gulp.watch(`./${$.path.src.folder}/${$.path.src.js}/**/*.js`, $.gulp.series('script'));        
-        $.gulp.watch(`./${$.path.src.folder}/${$.path.src.img}/**/*.*`, $.gulp.series('copy.image'));
+        $.gulp.watch(`./${$.path.src.folder}/${$.path.src.js}/**/*.js`, $.gulp.parallel('script'));        
+        $.gulp.watch(`./${$.path.src.folder}/${$.path.src.libs}/**/*.*`, $.gulp.parallel('js.libs', 'css.libs'));        
+        $.gulp.watch(`./${$.path.src.folder}/${$.path.src.img}/**/*.+(jpg|png|gif|svg|tiff|mp4)`, $.gulp.parallel('copy.image'));
+        $.gulp.watch(`./${$.path.src.folder}/${$.path.src.fonts}/**/*.*`, $.gulp.parallel('copy.fonts'));
 
         if ($.op.pug) {
             $.gulp.watch(`./${$.path.src.folder}/${$.path.src.pug}/**/*.pug`, $.gulp.series('pug'));

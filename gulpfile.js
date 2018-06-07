@@ -37,7 +37,7 @@ $.gulp.task('build', $.gulp.series(
 	$.gulp.parallel(
 		'build.scripts',
 		'build.img',
-		'copy.fonts',
+		'build.fonts',
 		'build.html',
 		'build.css'
 	)

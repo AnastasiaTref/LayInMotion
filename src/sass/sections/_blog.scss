@@ -12,16 +12,17 @@
 	}
 	&__item {
 		display: block;
-		width: 250px;
+		width: 300px;
 		margin-bottom: 20px;
 		position: relative;
-		border-radius: 10px;
+
+		@include min768 {
+			width: 325px;
+		}
 	}
 	&__wrap {
 		background: #fff;
 		box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
-		border-radius: 10px;
-		overflow: hidden;
 	}
 	&__content {
 		padding: 10px;
@@ -48,16 +49,18 @@
 		padding: 10px;
 		&--text {
 			text-transform: uppercase;
+			font-family: 'StalinistOneRegular';
 			font-weight: 700;
 			padding: 10px;
 			font-size: 13px;
+			color: #FFFD9A;
+			border: 5px solid rgba(179, 237, 251, 1);
+     		background: rgba(0,52, 94, .8);
 		}
 	}
+
 	&-img {
-		img {
-			width: 250px;
-			height: 156px;
-		}		
+			
 	}
 }
 .picture-bg {
@@ -96,41 +99,5 @@
 			}
 		}
 	}
-	.post__title--text {
-		
-     	border: 5px solid rgba(179, 237, 251, 1);
-     	background: rgba(0,52, 94, .8);
-    	color: #FFFD9A;;
-	}
-}
-.title-first {
-	padding: 5px;
-	background: rgba(179, 237, 251, 1);
 
-	.post__wrap {
-		background: #00345E;
-	}
-	.post__content {
-		padding: 0;
-
-		&--inner {
-			padding: 0;
-			border: none;
-			&:after {
-				display: none;
-			}
-		}
-	}
-	.post__title {
-		padding: 0;
-		color: #fff;	
-	}
-	.post-img {
-		border-bottom: 2px solid rgba(179, 237, 251, 1);
-		border-top: 2px solid rgba(179, 237, 251, 1);
-	}
-	.post__text {
-		color: #fff;
-		padding: 5px;
-	}
 }

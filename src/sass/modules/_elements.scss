@@ -2,3 +2,60 @@
 //			ELEMENTS
 // -----------------------------------
 
+	/* ------------------icomoon fonts -------------------*/
+
+	[class^="icon-"],
+	[class*=" icon-"] {
+	    /* use !important to prevent issues with browser extensions that change fonts */
+	    font-family: 'icomoon' !important;
+	    speak: none;
+	    font-style: normal;
+	    font-weight: normal;
+	    font-variant: normal;
+	    text-transform: none;
+	    line-height: 1;
+
+	    /* Better Font Rendering =========== */
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	}
+
+	.icon-quill:before {
+	    content: "\e907";
+	}
+
+	.icon-video-camera:before {
+	    content: "\e914";
+	}
+
+	.icon-envelop:before {
+	    content: "\e945";
+	}
+
+	.icon-calendar:before {
+	    content: "\e953";
+	}
+
+	.icon-eye:before {
+	    content: "\e9ce";
+	}
+
+	.icon-heart:before {
+	    content: "\e9da";
+	}
+
+	.icon-volume-high:before {
+	    content: "\ea26";
+	}
+
+	.icon-google-plus:before {
+	    content: "\ea8b";
+	}
+
+	.icon-facebook:before {
+	    content: "\ea90";
+	}
+
+	.icon-vimeo:before {
+	    content: "\eaa0";
+	}
