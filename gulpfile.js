@@ -19,8 +19,8 @@ $.gulp.task('default', $.gulp.series(
 	$.gulp.parallel(
 		$.op.sass ? 'pug' : 'html',
     	$.op.sass ? 'sass' : 'css',
-		'css.libs',
-		'js.libs',		
+		'js.libs',
+		//'css.libs',		
 		'copy.image',
 		'sprite.svg',
 		'copy.fonts',

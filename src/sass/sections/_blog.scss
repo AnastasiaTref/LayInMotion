@@ -1,15 +1,14 @@
 .blog {
 	&__inner {
 		padding-top: 50px;
+		
 	}
 }
+.masonry {
+	display: block;
+	width: 100%;
+	margin: auto;
 
-.post {
-	&__list {
-		display: block;
-		width: 100%;
-		margin: auto;
-	}
 	&__item {
 		display: block;
 		width: 300px;
@@ -20,9 +19,16 @@
 			width: 325px;
 		}
 	}
+}
+.post {
+	display: block;
+	background: #fff;
+	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+	border: 5px solid #b3edfb;
+	opacy
+
 	&__wrap {
-		background: #fff;
-		box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+
 	}
 	&__content {
 		padding: 10px;
@@ -49,18 +55,37 @@
 		padding: 10px;
 		&--text {
 			text-transform: uppercase;
-			font-family: 'StalinistOneRegular';
+			font-family: $fontTitles;
 			font-weight: 700;
 			padding: 10px;
-			font-size: 13px;
+			font-size: 18px;
 			color: #FFFD9A;
 			border: 5px solid rgba(179, 237, 251, 1);
      		background: rgba(0,52, 94, .8);
 		}
 	}
+	
+	figure {
+		display: block;
+		position: relative;
+		overflow: hidden;	
 
+	}
 	&-img {
+		transition: all 0.4s ease 0s;
+
+		img {
+			height: auto;
+			transition: all 0.4s ease-in-out;
+		}
+
+		&:hover {
+
+			img {
+				transform: scale(1.2) rotate(3deg);
+			}
 			
+		}
 	}
 }
 .picture-bg {
@@ -100,4 +125,10 @@
 		}
 	}
 
+}
+
+.categories {
+	.icon {
+		fill: #000;
+	}
 }

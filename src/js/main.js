@@ -5,12 +5,12 @@
 	/*******************************************/
 
 
-	var $masonaryContainer = $('.post__list');
+	var $masonaryContainer = $('.masonry');
 
 	$( window ).on("load", function() {
 
 		$masonaryContainer.masonry({
-	    	itemSelector: '.post__item',
+	    	itemSelector: '.masonry__item',
 	    	fitWidth: true,
 	    	gutter: 20
 		});
@@ -21,7 +21,7 @@
 
 	$(window).on("resize", function () {
 		$masonaryContainer.masonry({
-			itemSelector: '.post__item',
+			itemSelector: '.masonry__item',
 			fitWidth: true,
 			gutter: 20
 		});
@@ -29,9 +29,9 @@
 
 	});
 	$(window).on("scroll", function () {
-		if (!$masonaryContainer.find('.post__item').hasClass('wdportfolio')) {
+		if (!$masonaryContainer.find('.masonry__item').hasClass('wdportfolio')) {
 			$masonaryContainer.masonry({
-				itemSelector: '.post__item',
+				itemSelector: '.masonry__item',
 				fitWidth: true,
 				gutter: 20
 			});

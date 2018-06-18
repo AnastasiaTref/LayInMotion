@@ -4,7 +4,7 @@ module.exports = function() {
 
 	$.gulp.task('sprite.svg', function() {
 
-		return $.gulp.src(`${$.path.src.folder}/${$.path.src.sprite}/svg/*.svg`)
+		return $.gulp.src(`${$.path.src.folder}/${$.path.src.sprite}/*.svg`)
 			.pipe($.pl.svgmin({
 				js2svg: {
 					pretty: true

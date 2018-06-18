@@ -39,8 +39,9 @@ const path = {
 
             var path = this.folder + '/' + this.libs + '/';
 
+
             return [
-                path + 'animate.css'
+                //path + 'animate.css'
             ]
         }
     },
