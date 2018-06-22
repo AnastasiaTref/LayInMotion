@@ -1,0 +1,46 @@
+.icon {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	fill: #ffffff;
+}
+.ai {
+	fill: #700e8c;
+}
+
+.tag {
+	display: inline-flex;
+	width: 45px;
+	height: 45px;
+	background: $mainPostColor;
+	align-items: center;
+    justify-content: center;
+	border-radius: 50%;
+	cursor: pointer;
+
+	&__icon {
+		width: 20px;
+		height: 20px;
+		//fill: rgba(179, 237, 251, 1) ;
+	}
+}
+
+.i-pencil {
+	background: #BB400B;
+	.tag__icon {
+		fill: #E1C47E;
+	}
+}
+.i-microphone {
+	background: #082639;
+	.tag__icon {
+		
+		fill: #E1C47E;
+	}
+}
+.i-video {
+	background: #E1C47E;
+	.tag__icon {
+		fill: #082639;
+	}
+}

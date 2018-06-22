@@ -28,10 +28,10 @@ const path = {
 
 	        return [
 	            //path + 'jquery-3.3.1.min.js',
-                path + 'imagesloaded.pkgd.min.js',
-	            path + 'noframework.waypoints.min.js',
-	            //path + 'isotope.pkgd.min.js',
+
+                path + 'imagesloaded.pkgd.min.js',       
 	            path + 'masonry.pkgd.min.js',
+                path + 'noframework.waypoints.min.js',
 	            path + 'picturefill.min.js',
 	        ];               
 	    },

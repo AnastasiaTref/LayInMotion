@@ -44,15 +44,15 @@
     /* WAYPOINT */
     /*******************************************/
 
-   /* $(function() {
+    /*$(function() {
 
-    	$('.post__item').waypoint(function() {
+    	$('.post').waypoint(function() {
 
-    		$(this).addClass('animate');
+    		$(this.element).addClass('animate');
 
     		//if browser less ie10
     		if($.browser.msie && $.browser.version < 10) {
-    			$(this).css({
+    			$(this.element).css({
     				'opacity' : '1'
     			});
     		}
@@ -60,8 +60,8 @@
     		offset: '110%',
     		triggerOnce: false
     	});
-    });*/
-
+    });
+*/
 
 })(jQuery);
 		
