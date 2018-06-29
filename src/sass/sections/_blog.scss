@@ -12,7 +12,7 @@
 
 	&__item {
 		display: block;
-		width: 300px;
+		width: 275px;
 		margin-bottom: 20px;
 		position: relative;
 
@@ -27,10 +27,10 @@
 
 	&__content {
 		position: relative;
-		padding: 25px 10px 10px;
+		padding: 35px 10px 10px;
 		text-align: center;
 	}
-	&__tag {
+	&__category {
 		position: absolute;
 		top: -25px;
 		left: 50%;
@@ -141,11 +141,24 @@
 
 	}
 }
-
 .published {
+	display: block;
+	text-align: center;
+	padding: 15px 0 10px;
+	position: relative;
+
+	&:after {
+		@include pseudo;
+		width: 85px;
+		height: 2px;
+		background: $blueColor;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 	&__date {
 		color: $fontPostColor;
 	    font-size: 13px;
 	    text-transform: uppercase;
-	}
+	} 
 }

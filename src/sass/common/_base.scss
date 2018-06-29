@@ -21,6 +21,9 @@
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{
 	display:block
 }
+figure, iframe, video {
+	max-width: 100%;
+}
 [hidden]{
 	display:none
 }
@@ -35,7 +38,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 	border: 0;
 }
 a{	
-	text-decoration: underline;
+	text-decoration: none;
 	font-weight: 700;
 }
 a:active,
@@ -59,6 +62,11 @@ img {
 h1, h2, h3, h4, h5, h6 {
 	font-family: $fontMain;
 }
+h1 {
+	font-family: $fontTitles;
+	font-size: 40px;
+	color: #ffffff;
+}
 select {   
     appearance: none;
 }
@@ -68,6 +76,7 @@ select::-ms-expand {
 .main-wrapper {
 	width: 100%;
 	overflow: hidden;
+	position: relative;
 }
 .container{
 	margin-right: auto;

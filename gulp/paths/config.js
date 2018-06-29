@@ -27,12 +27,13 @@ const path = {
 	    	var path = this.folder + '/' + this.libs + '/';
 
 	        return [
-	            //path + 'jquery-3.3.1.min.js',
+	            path + 'jquery-3.3.1.min.js',
 
                 path + 'imagesloaded.pkgd.min.js',       
 	            path + 'masonry.pkgd.min.js',
                 path + 'noframework.waypoints.min.js',
-	            path + 'picturefill.min.js',
+                path + 'picturefill.min.js',
+	            path + 'velocity.min.js'
 	        ];               
 	    },
         cssLibs() {
@@ -41,7 +42,7 @@ const path = {
 
 
             return [
-                //path + 'animate.css'
+                path + 'animate.css'
             ]
         }
     },

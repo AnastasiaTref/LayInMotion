@@ -1,0 +1,24 @@
+.navigation {
+	&__menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+    	align-items: center;
+    	min-height: 60px;
+	}
+	&__item {
+		display: block;
+		margin: 0 10px; 
+	}
+	&__link {
+		display: block;
+		background: #b3edfb;
+		padding: 5px 10px;
+		border-radius: 3px;
+		font-size: 13px;
+		font-family: $fontTitles;
+		text-transform: uppercase;
+		color: #082639;
+
+	}
+}

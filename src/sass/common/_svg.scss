@@ -8,7 +8,7 @@
 	fill: #700e8c;
 }
 
-.tag {
+.category {
 	display: inline-flex;
 	width: 45px;
 	height: 45px;
@@ -27,20 +27,29 @@
 
 .i-pencil {
 	background: #BB400B;
-	.tag__icon {
+	.category__icon {
 		fill: #E1C47E;
 	}
 }
 .i-microphone {
 	background: #082639;
-	.tag__icon {
+	.category__icon {
 		
 		fill: #E1C47E;
 	}
 }
 .i-video {
 	background: #E1C47E;
-	.tag__icon {
+	.category__icon {
+		fill: #082639;
+	}
+}
+
+.menu {
+	&__icon {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
 		fill: #082639;
 	}
 }

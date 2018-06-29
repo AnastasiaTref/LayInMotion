@@ -1,4 +1,11 @@
 .header {
-	min-height: 700px;
+	min-height: 250px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	&__title {
+		text-align: center;
+	}
 	
 }

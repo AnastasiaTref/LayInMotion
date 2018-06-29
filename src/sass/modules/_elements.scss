@@ -59,3 +59,12 @@
 	.icon-vimeo:before {
 	    content: "\eaa0";
 	}
+
+	#particles {
+		position: absolute;
+		height: 800px;
+		width: 100%;
+		left: 0;
+		top: 0;
+		perspective: 800px;
+	}

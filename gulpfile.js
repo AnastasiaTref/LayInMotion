@@ -20,7 +20,7 @@ $.gulp.task('default', $.gulp.series(
 		$.op.sass ? 'pug' : 'html',
     	$.op.sass ? 'sass' : 'css',
 		'js.libs',
-		//'css.libs',		
+		'css.libs',		
 		'copy.image',
 		'sprite.svg',
 		'copy.fonts',
