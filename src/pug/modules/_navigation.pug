@@ -2,14 +2,13 @@ nav.navigation
 	ul.navigation__menu
 		li.navigation__item.navigation__item--current
 			a(href="").navigation__link
-				.navigation__icon.tag.i-c4d
+				.navigation__icon.tages
 					img(class="tag__icon icon" src="images/Apps-Cinema4D.png")
 				span.navigation__text Cinema 4D
 		li.navigation__item
 			a(href="").navigation__link
-				.navigation__icon.tag.i-ps
-					svg(viewBox="0 0 100 100" class="tag__icon icon" )
-						use(xlink:href="images/sprite.svg#adobe-photoshop")
+				.navigation__icon.tages
+					+icon('photoshop', '-ps')
 				span.navigation__text Photoshop
 		li.navigation__item
 			a(href="").navigation__link 
@@ -21,7 +20,6 @@ nav.navigation
 				span.navigation__text Premiere
 		li.navigation__item
 			a(href="").navigation__link 
-				.navigation__icon.tag.i-ai
-					svg(viewBox="0 0 100 100" class="tag__icon icon" )
-						use(xlink:href="images/sprite.svg#adobe-illustrator")
+				.navigation__icon.tages
+					+icon('illustrator', '-ai')
 				span.navigation__text Illustrator

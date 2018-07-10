@@ -1,11 +1,28 @@
-extends ../_base
-
-block variables
-	//- var title = "Добро пожаловать!"
-	- var pageTitle = 'Article'
-
-block content
-	include ../sections/_header
-	include ../modules/_navigation
-	include ../sections/_blog
-	include ../sections/_footer
+.article {
+	&__wrapper {
+		background: url('../images/page-bg.jpg') center -200px no-repeat;
+	}
+	&__content {
+		background: #2b3e58;
+		color: #fff;
+		max-width: 1150px;
+		margin: auto;
+		padding: 15px; 
+	}
+	&__title {
+		text-align: center;
+		margin: 20px auto;
+		padding: 0 25px;
+		font-size: 37px;
+		font-weight: 700;
+		font-family: $fontMain;
+		text-transform: uppercase;
+		line-height: 1.1;
+		color: $blueColor;
+	}
+	.published {
+		&__date {
+			color: $blueColor;
+		} 		
+	}
+}

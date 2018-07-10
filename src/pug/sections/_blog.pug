@@ -1,3 +1,6 @@
+block variables
+	- var title = "Blog LayInMotion"
+
 block content
 	.blog
 		include ../modules/_navigation
@@ -11,24 +14,25 @@ block content
 								.post__preview
 									figure.post-img
 										img(src="images/img1.jpg", alt="")
-								.published
-									span.published__date #[i.icon-calendar] Jan 19, 2018
+								.post__meta
+									.published
+										span.published__date #[i.icon-calendar] Jan 19, 2018
+									.post__categories.categories.i-pencil
+										+icon('pencil', '-icon')
 								.post__content
 									.post__content--inner
 										.post__title
-											.post__category.category.i-pencil
-												svg(viewBox="0 0 100 100" class="category__icon" )
-													use(xlink:href="images/sprite.svg#pencil")
+											
 											h3.post__title--text ipsum dolor sit amet
 										p.post__text  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись буквоград ты решила, там, заглавных текстами на берегу букв он. Деревни речью буквенных собрал бросил если составитель, переписали текст вскоре.
 								.post__info
-									ul.categories
-										li.categories__item
-											.categories__icon
-												+icon('ps', 'adobe-photoshop')
-										li.categories__item
-											.categories__icon
-												+icon('ai', 'adobe-photoshop')
+									ul.tages__list
+										li.tages
+											.tages__icon.i-photoshop
+												+icon('photoshop', '-icon')
+										li.tages
+											.tages__icon.i-illustrator
+												+icon('illustrator', '-icon')
 					.masonry__item
 						article.post
 							a(href="page.html").post__link
@@ -41,19 +45,18 @@ block content
 								.post__content
 									.post__content--inner
 										.post__title
-											.post__category.category.i-pencil
-												svg(viewBox="0 0 100 100" class="category__icon" )
-													use(xlink:href="images/sprite.svg#pencil")
+											.post__categories.categories.i-pencil
+												+icon('pencil', '-icon')
 											h3.post__title--text Amazing tutorials to help you learn to create 3D animations, videos, artwork and illustrations using Maxon Cinema 4D.
 										p.post__text Consectetur adipisicing elit. Impedit modi, repellendus aspernatur consectetur molestias voluptate optio ullam ipsa maxime rerum aliquam sed eius et vitae consequuntur, omnis quibusdam minus accusantium?
 								.post__info
-									ul.categories
-										li.categories__item
-											.categories__icon
-												+icon('ps', 'adobe-photoshop')
-										li.categories__item
-											.categories__icon
-												+icon('ai', 'adobe-photoshop')
+									ul.tages__list
+										li.tages
+											.tages__icon.i-photoshop
+												+icon('photoshop', '-icon')
+										li.tages
+											.tages__icon.i-illustrator
+												+icon('illustrator', '-icon')
 					.masonry__item
 						article.post
 							.post__wrap
@@ -64,19 +67,18 @@ block content
 								.post__content
 									.post__content--inner
 										.post__title
-											.post__category.category.i-video
-												svg(viewBox="0 0 100 100" class="category__icon" )
-													use(xlink:href="images/sprite.svg#video")
+											.post__categories.categories.i-video
+												+icon('video', '-icon')
 											h3.post__title--text ipsum dolor sit amet
 										p.post__text Consectetur adipisicing elit. Impedit modi, repellendus aspernatur consectetur molestias voluptate optio ullam ipsa maxime rerum aliquam sed eius et vitae consequuntur, omnis quibusdam minus accusantium?
 								.post__info
-									ul.categories
-										li.categories__item
-											.categories__icon
-												+icon('ps', 'adobe-photoshop')
-										li.categories__item
-											.categories__icon
-												+icon('ai', 'adobe-photoshop')
+									ul.tages__list
+										li.tages
+											.tages__icon.i-photoshop
+												+icon('photoshop', '-icon')
+										li.tages
+											.tages__icon.i-illustrator
+												+icon('illustrator', '-icon')
 					.masonry__item
 						article.post
 							.post__wrap
@@ -87,18 +89,17 @@ block content
 								.post__content
 									.post__content--inner
 										.post__title
-											.post__category.category.i-video
-												svg(viewBox="0 0 100 100" class="category__icon" )
-													use(xlink:href="images/sprite.svg#video")
+											.post__categories.categories.i-video
+												+icon('video', '-icon')
 											h3.post__title--text These tutorials are based for cinema 4d, the first is definitely advanced but the second is more of a beginners guide.
 								.post__info
-									ul.categories
-										li.categories__item
-											.categories__icon
-												+icon('ps', 'adobe-photoshop')
-										li.categories__item
-											.categories__icon
-												+icon('ai', 'adobe-photoshop')
+									ul.tages__list
+										li.tages
+											.tages__icon.i-photoshop
+												+icon('photoshop', '-icon')
+										li.tages
+											.tages__icon.i-illustrator
+												+icon('illustrator', '-icon')
 					.masonry__item
 						article.post
 							.post__wrap
@@ -110,19 +111,18 @@ block content
 								.post__content
 									.post__content--inner
 										.post__title
-											.post__category.category.i-video
-												svg(viewBox="0 0 100 100" class="category__icon" )
-													use(xlink:href="images/sprite.svg#video")
+											.post__categories.categories.i-video
+												+icon('video', '-icon')
 											h3.post__title--text ipsum dolor sit amet
 										p.post__text Consectetur adipisicing elit. Impedit modi, repellendus aspernatur consectetur molestias voluptate optio ullam ipsa maxime rerum aliquam sed eius et vitae consequuntur, omnis quibusdam minus accusantium?
 								.post__info
-									ul.categories
-										li.categories__item
-											.categories__icon
-												+icon('ps', 'adobe-photoshop')
-										li.categories__item
-											.categories__icon
-												+icon('ai', 'adobe-photoshop')
+									ul.tages__list
+										li.tages
+											.tages__icon.i-photoshop
+												+icon('photoshop', '-icon')
+										li.tages
+											.tages__icon.i-illustrator
+												+icon('illustrator', '-icon')
 					.masonry__item
 						article.post
 							.post__wrap
@@ -134,19 +134,18 @@ block content
 								.post__content
 									.post__content--inner
 										.post__title
-											.post__category.category.i-video
-												svg(viewBox="0 0 100 100" class="category__icon" )
-													use(xlink:href="images/sprite.svg#video")
+											.post__categories.categories.i-video
+												+icon('video', '-icon')
 											h3.post__title--text ipsum dolor sit amet
 										p.post__text Consectetur adipisicing elit. Impedit modi, repellendus aspernatur consectetur molestias voluptate optio ullam ipsa maxime rerum aliquam sed eius et vitae consequuntur, omnis quibusdam minus accusantium?
 								.post__info
-									ul.categories
-										li.categories__item
-											.categories__icon
-												+icon('ps', 'adobe-photoshop')
-										li.categories__item
-											.categories__icon
-												+icon('ai', 'adobe-photoshop')
+									ul.tages__list
+										li.tages
+											.tages__icon.i-photoshop
+												+icon('photoshop', '-icon')
+										li.tages
+											.tages__icon.i-illustrator
+												+icon('illustrator', '-icon')
 					.masonry__item
 						article.post
 							.post__wrap
@@ -160,13 +159,13 @@ block content
 										header.post__title  
 											h3.post__title--text learn how to a chieva a perfect and smooth surface in realflow plugin for Cinema 4d
 								.post__info 
-									ul.categories
-										li.categories__item
-											.categories__icon
-												+icon('ps', 'adobe-photoshop')
-										li.categories__item
-											.categories__icon
-												+icon('ai', 'adobe-photoshop')
+									ul.tages__list
+										li.tages
+											.tages__icon.i-photoshop
+												+icon('photoshop', '-icon')
+										li.tages
+											.tages__icon.i-illustrator
+												+icon('illustrator', '-icon')
 					.masonry__item
 						article.post
 							.post__wrap
@@ -178,19 +177,18 @@ block content
 								.post__content
 									.post__content--inner
 										.post__title
-											.post__category.category.i-microphone
-												svg(viewBox="0 0 100 100" class="category__icon icon")
-													use(xlink:href="images/sprite.svg#microphone")
+											.post__categories.categories.i-microphone
+												+icon('microphone', '-icon')
 											h3.post__title--text ipsum dolor sit amet
 										p.post__text Consectetur adipisicing elit. Impedit modi, repellendus aspernatur consectetur molestias?
 								.post__info
-									ul.categories
-										li.categories__item
-											.categories__icon
-												+icon('ps', 'adobe-photoshop')
-										li.categories__item
-											.categories__icon
-												+icon('ai', 'adobe-photoshop')
+									ul.tages__list
+										li.tages
+											.tages__icon.i-photoshop
+												+icon('photoshop', '-icon')
+										li.tages
+											.tages__icon.i-illustrator
+												+icon('illustrator', '-icon')
 					.masonry__item
 						article.post
 							.post__wrap
@@ -202,19 +200,18 @@ block content
 								.post__content
 									.post__content--inner
 										.post__title
-											.post__category.category.i-pencil
-												svg(viewBox="0 0 100 100" class="category__icon icon" )
-													use(xlink:href="images/sprite.svg#pencil")
+											.post__categories.categories.i-pencil
+												+icon('pencil', '-icon')
 											h3.post__title--text ipsum dolor sit amet
 										p.post__text Consectetur adipisicing elit. Impedit modi, repellendus aspernatur consectetur molestias voluptate optio ullam ipsa maxime rerum aliquam sed eius et vitae consequuntur, omnis quibusdam minus accusantium?
 								.post__info
-									ul.categories
-										li.categories__item
-											.categories__icon
-												+icon('ps', 'adobe-photoshop')
-										li.categories__item
-											.categories__icon
-												+icon('ai', 'adobe-photoshop')
+									ul.tages__list
+										li.tages
+											.tages__icon.i-photoshop
+												+icon('photoshop', '-icon')
+										li.tages
+											.tages__icon.i-illustrator
+												+icon('illustrator', '-icon')
 					.masonry__item
 						article.post
 							.post__wrap
@@ -226,19 +223,18 @@ block content
 								.post__content
 									.post__content--inner
 										.post__title
-											.post__category.category.i-pencil
-												svg(viewBox="0 0 100 100" class="category__icon icon" )
-													use(xlink:href="images/sprite.svg#pencil")
+											.post__categories.categories.i-pencil
+												+icon('pencil', '-icon')
 											h3.post__title--text ipsum dolor sit amet	
 										p.post__text Consectetur adipisicing elit. Impedit modi, repellendus aspernatur consectetur molestias voluptate optio ullam ipsa maxime rerum aliquam sed eius et vitae consequuntur, omnis quibusdam minus accusantium?
 								.post__info
-									ul.categories
-										li.categories__item
-											.categories__icon
-												+icon('ps', 'adobe-photoshop')
-										li.categories__item
-											.categories__icon
-												+icon('ai', 'adobe-photoshop')
+									ul.tages__list
+										li.tages
+											.tages__icon.i-photoshop
+												+icon('photoshop', '-icon')
+										li.tages
+											.tages__icon.i-illustrator
+												+icon('illustrator', '-icon')
 					.masonry__item
 						article.post
 							.post__wrap
@@ -250,19 +246,18 @@ block content
 								.post__content
 									.post__content--inner
 										.post__title
-											.post__category.category.i-microphone
-												svg(viewBox="0 0 100 100" class="category__icon icon")
-													use(xlink:href="images/sprite.svg#microphone")
+											.post__categories.categories.i-microphone
+												+icon('microphone', '-icon')
 											h3.post__title--text ipsum dolor sit amet
 										p.post__text Consectetur adipisicing elit. Impedit modi, repellendus aspernatur consectetur molestias voluptate optio ullam ipsa maxime rerum aliquam sed eius et vitae consequuntur, omnis quibusdam minus accusantium?
 								.post__info
-									ul.categories
-										li.categories__item
-											.categories__icon
-												+icon('ps', 'adobe-photoshop')
-										li.categories__item
-											.categories__icon
-												+icon('ai', 'adobe-photoshop')
+									ul.tages__list
+										li.tages
+											.tages__icon.i-photoshop
+												+icon('photoshop', '-icon')
+										li.tages
+											.tages__icon.i-illustrator
+												+icon('illustrator', '-icon')
 					.masonry__item
 						article.post
 							.post__wrap
@@ -274,19 +269,18 @@ block content
 								.post__content
 									.post__content--inner
 										.post__title 
-											.post__category.category.i-pencil
-												svg(viewBox="0 0 100 100" class="category__icon icon" )
-													use(xlink:href="images/sprite.svg#pencil")
+											.post__categories.categories.i-pencil
+												+icon('pencil', '-icon')
 											h3.post__title--text ipsum dolor sit amet
 										p.post__text Consectetur adipisicing elit. Impedit modi, repellendus aspernatur consectetur molestias voluptate optio ullam ipsa maxime rerum aliquam sed eius et vitae consequuntur, omnis quibusdam minus accusantium?
 								.post__info
-									ul.categories
-										li.categories__item
-											.categories__icon
-												+icon('ps', 'adobe-photoshop')
-										li.categories__item
-											.categories__icon
-												+icon('ai', 'adobe-illustrator')
+									ul.tages__list
+										li.tages
+											.tages__icon.i-photoshop
+												+icon('photoshop', '-icon')
+										li.tages
+											.tages__icon.i-illustrator
+												+icon('illustrator', '-icon')
 					.masonry__item
 						article.post
 							.post__wrap
@@ -298,16 +292,15 @@ block content
 								.post__content
 									.post__content--inner
 										.post__title
-											.post__category.category.i-microphone
-												svg(viewBox="0 0 100 100" class="category__icon icon")
-													use(xlink:href="images/sprite.svg#microphone")
+											.post__categories.categories.i-microphone
+												+icon('microphone', '-icon')
 											h3.post__title--text ipsum dolor sit amet
 										p.post__text Consectetur adipisicing elit. Impedit modi, repellendus aspernatur consectetur molestias voluptate optio ullam ipsa maxime rerum aliquam sed eius et vitae consequuntur, omnis quibusdam minus accusantium?
 								.post__info
-									ul.categories
-										li.categories__item
-											.categories__icon
-												+icon('ps', 'adobe-photoshop')
-										li.categories__item
-											.categories__icon
-												+icon('ai', 'adobe-illustrator')
+									ul.tages__list
+										li.tages
+											.tages__icon.i-photoshop
+												+icon('photoshop', '-icon')
+										li.tages
+											.tages__icon.i-illustrator
+												+icon('illustrator', '-icon')

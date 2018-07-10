@@ -1,11 +1,9 @@
 //  svg icons
 
-mixin icon(mod, name)
+mixin icon(name,mod)
 	-mod = mod || ""
-	svg(aria-hidden="true" class="icon "  + mod)
+	svg(aria-hidden="true" class="icon " + name + '' + mod)
 		use(xlink:href="images/sprite.svg#"+ name)
-
-
 // lists
 
 mixin list(className, items,  activeItem)

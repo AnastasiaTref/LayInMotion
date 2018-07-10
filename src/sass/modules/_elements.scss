@@ -69,122 +69,73 @@
 		perspective: 800px;
 	}
 
-	.round{
-	
-		// Настройки основного блока
-	
-		$size: 100px; 																// Размер круга 
-		$color: #333;																	// Цвет текста и обводки
-		$border : 2px solid red; 															// Обводка
-		$box-shadow: none; 														// Цвет тени
-		$background-color: none; 											// Цвет заливки
-		$display: inline-block;												// Дисплей всего блока
-		$border-gutter: 0;													// Отступ, если задан бордер 
-	
-	
-		//=========== Настройки иконки =============//
-	
-		$ico-on: true;																// Включить css иконки
-	
-	
-	
-		//=========== Настройки иконки =============//
-	
-	
-		//=========== Настройки счетчика =============//
-	
-		$num-on : true;																			// Включить css счетчика
-		$num-counter: false;																// Считает сами round
-		$num-counter-name: items;														// Название переменной счетчика
-		$counter-before: '';																// Текст перед счетчиков
-		$counter-after: '';																	// Текст после счетчика
-		$num-size: 52px;																		// Размер шрифта счетчика
-		$num-color: $color;																	// Цвет текста
-		$num-text-shadow: none;				// Цвет тени текста
-		$num-font-weight: 700;															// Толщина текста счетчика
-	
-		//=========== Настройки счетчика =============//
-	
-	
-		//=========== Прочие =============//
-	
-		$reset-on : false;																	// Если есть класс %reset, то ставим true
-	
-	
-	
-	
-	
-		@if($reset-on){
-			@extend %reset;
+	/* ------------------ published -------------------*/
+
+	.published {
+		display: block;
+		text-align: center;
+		padding: 15px 0 10px;
+		position: relative;
+
+		&:after {
+			@include pseudo;
+			width: 85px;
+			height: 2px;
+			background: $blueColor;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
 		}
-		border-radius: 50%;
-		color: $color;
-		@if($num-counter){
-			counter-increment: $num-counter-name;
+		&__date {
+			display: inline-block;
+			color: $fontPostColor;
+		    font-size: 13px;
+		    text-transform: uppercase;
+		    position: relative;
+		    padding-left: 20px;
 		}
-		
-		@if($box-shadow != none){
-			box-shadow: $box-shadow;
+		i {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
 		}
-		display: $display;
-		overflow: hidden;
-		@if($border != none && $border-gutter != none){
-			padding: $border-gutter;
-		}
-	
-		// внутренний
-		&__inner{
-			@if($reset-on){
-				@extend %reset;
-			}
-			display: table;
-			text-align: center;
-			width: $size;
-			height: $size;
-			background: no-repeat center / cover;
-			@if($border != none){
-				border: $border;
-			}
-			@if($background-color != none){
-				background-color: -color;
-			}
-			@if($border != none && $border-gutter != none){
-				border-radius: inherit;
-			}
-		}
-		&__ico{
-			@if($reset-on){
-				@extend %reset;
-			}
-			@if($ico-on){
-				display: table-cell;
-				position: relative;
-				vertical-align: middle;
-			}
-		}
-		@if($num-on){
-			&__num{
-				@if($reset-on){
-					@extend %reset;
-				}
-				display: table-cell;
-				vertical-align: middle;
-				font-weight: $num-font-weight;
-				font-size: $num-size;
-				@if($num-text-shadow != none){
-					text-shadow: $num-text-shadow;
-				}
-				@if($num-color != none){
-					color: $num-color;
-				}
-				&:before{
-					content: $counter-before counter($num-counter-name) $counter-after;
-					display: block;
-				}
-			}
-		}
-	
-		// Модификаторы
-	
-	
 	}
+
+	/* ------------------ categories -------------------*/
+
+	.categories {
+
+		display: inline-flex;
+		width: 45px;
+		height: 45px;
+		align-items: center;
+    	justify-content: center;
+		border-radius: 50%;
+		cursor: pointer;
+
+		.icon {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	/* ------------------ categories -------------------*/
+
+	.tages{
+		padding: 10px;
+		margin: 0 5px;
+		background: #b3edfb;
+		border-radius: 50%;
+		&__list {
+			display: flex;
+			justify-content: flex-end;
+			width: 100%;
+		}
+		.icon {
+			display: block;
+			width: 20px;
+			height: 20px;
+		}
+	}
+
