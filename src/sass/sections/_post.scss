@@ -6,26 +6,17 @@
 
 	&__content {
 		position: relative;
-		padding: 35px 10px 10px;
+		padding: 10px;
 		text-align: center;
-	}
-	&__categories {
-		position: absolute;
-		top: -25px;
-		left: 50%;
-		transform: translateX(-50%);
-		z-index: 1;
 	}
 	&__title {
 		position: relative;
 		margin-bottom: 15px;
 		text-align: center;
-		padding: 30px 10px 10px;
-		border: 5px solid $blueColor;
-     	background: $mainPostColor;
 		&--text {
 			text-transform: uppercase;
-			font-family: $fontTitles;
+			//font-family: $fontTitles;
+			font-family: 'Oswald', sans-serif;
 			font-weight: 700;			
 			font-size: 18px;
 			color: $fontPostColor;
@@ -39,20 +30,36 @@
 		overflow: hidden;	
 
 	}
+	&__preview {
+		position: relative;
+		text-align: center;
+		overflow: hidden;
+		
+		&:before {
+			@include pseudo;
+			width: 50%;
+			height: 100%;
+			background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.2) 100%);
+			transform: skewX(-25deg);
+			top: 0;
+			left: -85%;
+			z-index: 2;
+		}
+
+		&:hover:before {
+			animation: shine 1s;
+		}
+
+	}
+	@keyframes shine {
+		100% {
+			left: 125%;
+		}
+	}
 	&-img {
-		transition: all 0.4s ease 0s;
 
 		img {
 			height: auto;
-			transition: all 0.4s ease-in-out;
-		}
-
-		&:hover {
-
-			img {
-				transform: scale(1.2) rotate(3deg);
-			}
-			
 		}
 	}
 	&__info {
@@ -63,12 +70,5 @@
 	    justify-content: space-around;
 	    align-items: center;
 	    padding: 10px;
-	}
-	&__link {
-		display: block;
-		position: absolute;
-		left: 0; top: 0; bottom: 0; right: 0;
-		z-index: 1;
-		cursor: pointer;
 	}
 }

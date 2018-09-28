@@ -16,6 +16,10 @@
 		margin-bottom: 20px;
 		position: relative;
 
+		@include min768 {
+			width: 340px;
+		}
+
 		
 	}
 }

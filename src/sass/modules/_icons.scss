@@ -1,0 +1,35 @@
+
+
+/* ------------------ categories -------------------*/
+
+	.categories {
+
+		display: inline-flex;
+		width: 45px;
+		height: 45px;
+		align-items: center;
+    	justify-content: center;
+		border-radius: 50%;
+		cursor: pointer;
+
+		.icon {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	.tag{
+		padding: 10px;
+		margin: 0 5px;
+		background: #b3edfb;
+		border-radius: 50%;
+		&__list {
+			display: flex;
+			width: 100%;
+		}
+		.icon {
+			display: block;
+			width: 20px;
+			height: 20px;
+		}
+	}
