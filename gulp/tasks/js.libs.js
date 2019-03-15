@@ -11,7 +11,7 @@ module.exports = function() {
 		       //.pipe($.pl.uglify())
 		       .pipe($.gulp.dest( `./${$.path.temp.folder}/${$.path.temp.js}` ))
 		} else {
-			return;
+			return false;
 		}
 	    
 	})

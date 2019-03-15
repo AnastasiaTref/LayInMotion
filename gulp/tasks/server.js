@@ -1,17 +1,17 @@
 'use strict';
+// Static server
 
 module.exports = function() {
+	
+	$.gulp.task('server', function() {
+	    $.browserSync.init({
+	    	open: false,
+	    	notify: false,
+	        server: {
+	            baseDir: $.path.temp.folder
 
-    $.gulp.task('server', function() {
-
-    	console.log($.path.temp.folder)
-
-        $.browserSync.init({
-        	open: false,
-            notify: false,
-        	server: $.path.temp.folder
-        });
-
-        $.browserSync.watch($.path.temp.folder, $.browserSync.reload);
-    });
-};
+	        }
+	    });
+	    //$.browserSync.watch($.path.temp.folder , $.browserSync.reload)
+	});
+}

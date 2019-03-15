@@ -1,7 +1,0 @@
-{
-	"host": "server.com",
-	"user": "login",
-	"pass": "password",
-	"remotePath" : "remotePath",
-	"localFilesGlob": ""
-}

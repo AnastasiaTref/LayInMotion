@@ -11,7 +11,7 @@ module.exports = function() {
 		        .pipe($.pl.csso())
 		        .pipe($.gulp.dest( `./${$.path.temp.folder}/${$.path.temp.css}` )) 
 		} else {
-			return;			
+			return false;			
 		}
 	})
 };

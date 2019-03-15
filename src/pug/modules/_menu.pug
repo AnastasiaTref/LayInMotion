@@ -1,26 +1,98 @@
-nav.nav
-	ul.nav__menu
-		li.nav__item.nav__item--current
-			a(href="").nav__link
-				.nav__icon
-					svg(viewBox="0 0 100 100" class="menu__icon icon" )
-						use(xlink:href="images/sprite.svg#home")
-				span.nav__text Главная
-		li.nav__item
-			a(href="").nav__link
-				.nav__icon
-					svg(viewBox="0 0 100 100" class="menu__icon icon" )
-						use(xlink:href="images/sprite.svg#article")
-				span.nav__text Блог
-		li.nav__item
-			a(href="").nav__link 
-				.nav__icon
-					svg(viewBox="0 0 100 100" class="menu__icon icon" )
-						use(xlink:href="images/sprite.svg#gallery")
-				span.nav__text Галлерея
-		li.nav__item
-			a(href="").nav__link 
-				.nav__icon
-					svg(viewBox="0 0 100 100" class="menu__icon icon" )
-						use(xlink:href="images/sprite.svg#contacts")
-				span.nav__text Контакты
+.slide-menu
+	ul.slide-menu__items.menu
+		li.slide-menu__item
+			.menu__header
+				.menu__header--content
+					include _humburger.pug
+			.menu__body
+				#secondary.sidebar
+					aside#archives.sidebar__block.sidebar__block--archives
+						h4.sidebar__title Archives
+						ul
+							li 
+								i.icon-archive 
+								| June 2016
+							li 
+								i.icon-archive 
+								| May 2016
+							li 
+								i.icon-archive 
+								| January 2016
+					aside#categories.sidebar__block.sidebar__block--categories
+						h4.sidebar__title Categories
+						ul
+							li June 2016
+							li May 2016
+							li January 2016
+					aside#meta.sidebar__block.sidebar__block--meta
+						h4.sidebar__title Meta
+						ul
+							li Cinema 4D
+							li Photoshop
+							li After Effect
+							li Premiere
+							li Illustrator
+					aside#archives.sidebar__block
+						h4.sidebar__title Archives
+						ul
+							li June 2016
+							li May 2016
+							li January 2016
+					aside#categories.sidebar__block
+						h4.sidebar__title Categories
+						ul
+							li June 2016
+							li May 2016
+							li January 2016
+					aside#meta.sidebar__block
+						h4.sidebar__title Meta
+						ul
+							li Cinema 4D
+							li Photoshop
+							li After Effect
+							li Premiere
+							li Illustrator
+					aside#archives.sidebar__block
+						h4.sidebar__title Archives
+						ul
+							li June 2016
+							li May 2016
+							li January 2016
+					aside#categories.sidebar__block
+						h4.sidebar__title Categories
+							ul
+								li June 2016
+								li May 2016
+								li January 2016
+					aside#meta.sidebar__block
+						h4.sidebar__title Meta
+							ul
+								li Cinema 4D
+								li Photoshop
+								li After Effect
+								li Premiere
+								li Illustrator
+		li.slide-menu__item
+			.menu__header
+				.menu__header--content
+					a(href="" target="_blank")
+						svg(viewBox="0 0 100 100" class="menu__icon icon" )
+							use(xlink:href="images/sprite.svg#home")
+		li.slide-menu__item
+			.menu__header
+				.menu__header--content
+					a(href="" target="_blank")
+						svg(viewBox="0 0 100 100" class="menu__icon icon" )
+							use(xlink:href="images/sprite.svg#article")
+		li.slide-menu__item
+			.menu__header
+				.menu__header--content
+					a(href="" target="_blank")
+						svg(viewBox="0 0 100 100" class="menu__icon icon" )
+							use(xlink:href="images/sprite.svg#gallery")
+		li.slide-menu__item
+			.menu__header
+				.menu__header--content
+					a(href="" target="_blank")
+						svg(viewBox="0 0 100 100" class="menu__icon icon" )
+							use(xlink:href="images/sprite.svg#contacts")
