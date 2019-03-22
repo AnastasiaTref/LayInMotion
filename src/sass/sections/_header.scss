@@ -1,9 +1,7 @@
 .header {
-	min-height: 250px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-
+	display: block;
+	background: rgba(255, 255, 255, 1);
+	box-shadow: 0 0 6px rgba(2, 37, 59, 0.8);
 	&__title {
 		text-align: center;
 	}

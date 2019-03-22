@@ -33,7 +33,7 @@
 		position: relative;
 		text-align: center;
 		overflow: hidden;
-		
+
 		&:before {
 			@include pseudo;
 			width: 50%;
@@ -48,7 +48,11 @@
 		&:hover:before {
 			animation: shine 1s;
 		}
-
+		figure, iframe, video {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
 	}
 	@keyframes shine {
 		100% {

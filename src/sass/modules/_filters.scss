@@ -1,0 +1,20 @@
+.filter{
+	&__list {
+		display: flex;
+		width: 100%;
+		border-bottom: 1px solid $darkGrey;
+	}
+	&__item {
+		display: inline-block;
+		border-right: 1px solid $darkGrey;
+		text-align: center;
+	}
+	&__link {
+		display: block;
+		padding: 5px 18px;
+		font-size: 14px;
+		font-family: $fontTitles;
+		text-transform: uppercase;
+		color: $darkGrey;
+	}
+}

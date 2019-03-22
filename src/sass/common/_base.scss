@@ -77,8 +77,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
 	font-family: $fontTitles;
-	font-size: 40px;
-	color: #ffffff;
 }
 select {   
     appearance: none;
@@ -122,7 +120,7 @@ body {
 	color: $mainFontColor;
 	line-height: 1.5;
 	position: relative;
-	background: $mainBgColor url('http://www.divulgethemes.com/lifestyle_shop/wp-content/uploads/2016/06/07t2mb2.gif');
+	background:$darkGrey;
 }
 .only-mobile {
 	display: block;
