@@ -1,0 +1,30 @@
+extends ../_base
+
+block variables
+	- var title = "Contact"
+	- var pageTitle = 'contact-page'
+
+block content
+	include ../sections/_header
+	main
+		.container
+			.s-contacts
+				.s-contacts__info
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem possimus, iusto, ea minus facilis commodi magnam similique nam aspernatur eaque, sequi nemo perspiciatis quasi aperiam recusandae enim quae reiciendis error? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem possimus, iusto, ea minus facilis commodi magnam similique nam aspernatur eaque, sequi nemo perspiciatis quasi aperiam recusandae enim quae reiciendis error? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem possimus, iusto, ea minus facilis commodi magnam similique nam aspernatur eaque, sequi nemo perspiciatis quasi aperiam recusandae enim quae reiciendis error? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem possimus, iusto, ea minus facilis commodi magnam similique nam aspernatur eaque, sequi nemo perspiciatis quasi aperiam recusandae enim quae reiciendis error?
+			.s-form__wrap
+				h2.s-form__title Contact us
+				.s-form
+					form(class="contact-form" action="" method="post")
+						fieldset.form-field
+							input(id="fieldName" name="name" type="text").form-input.form-control
+							label(for="fieldName").form-label Your Name #[span.req *]
+						fieldset.form-field
+							input(id="fieldEmail" name="email" type="email").form-input.form-control
+							label(for="fieldEmail").form-label Your Email #[span.req *]
+						fieldset.form-field
+							textarea(id="fieldTextarea" name="message").form-textarea.form-control
+							label(for="fieldTextarea").form-label Your massege #[span.req *]
+						button(type="button").form-button Submit
+
+		
+	include ../sections/_footer

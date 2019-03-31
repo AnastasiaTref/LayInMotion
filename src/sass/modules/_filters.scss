@@ -2,19 +2,78 @@
 	&__list {
 		display: flex;
 		width: 100%;
-		border-bottom: 1px solid $darkGrey;
 	}
 	&__item {
 		display: inline-block;
-		border-right: 1px solid $darkGrey;
+		border-right: 1px solid $navLightClr;
 		text-align: center;
 	}
 	&__link {
 		display: block;
-		padding: 5px 18px;
-		font-size: 14px;
+		padding: 6px 18px;
+		font-size: 13px;
+		font-weight: 500;
 		font-family: $fontTitles;
-		text-transform: uppercase;
-		color: $darkGrey;
+		color: #fff;
+		position: relative;
+		letter-spacing: 2px;
+		z-index: 0;
+		overflow: hidden;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			transition: all 200ms ease;
+			transform: translateX(-100%);
+			z-index: -1;
+			transition: $transition;
+		}
+		&.green, &.yellow, &.cyan, &.blue, &.orange, &.red {
+			background: transparent;
+			&:before {
+				background: $green;
+			}
+		}
+		&.green{
+			&:before {
+				background: $green;
+			}
+		}
+		&.yellow {
+			&:before {
+				background: $yellow;
+			}
+		}
+		&.cyan {
+			&:before {
+				background: $cyan;
+			}
+		}
+		&.blue {
+			&:before {
+				background: $blue;
+			}
+		}
+		&.orange {
+			&:before {
+				background: $orange;
+			}
+		}
+		&.red {
+			&:before {
+				background: $red;
+			}
+		}
+		&:hover {
+			&.green:before, &.yellow:before, &.cyan:before, &.blue:before, &.orange:before, &.red:before {
+				transform: translateX(0);
+				transition: $transition;
+			}
+		}
+		
 	}
 }

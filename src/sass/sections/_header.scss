@@ -1,9 +1,22 @@
 .header {
 	display: block;
-	background: rgba(255, 255, 255, 1);
+	background: $navBg;
 	box-shadow: 0 0 6px rgba(2, 37, 59, 0.8);
+
+	&__top {
+		position: relative;	
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 	&__title {
 		text-align: center;
+	}
+	&__bottom {
+		border-bottom: 1px solid $navLightClr;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 	
 }

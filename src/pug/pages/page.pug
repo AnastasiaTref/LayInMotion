@@ -5,25 +5,34 @@ block variables
 	- var pageTitle = 'article-page'
 
 block content
-	.article__wrapper
-		include ../sections/_header
-		.article__content
-			article.article
-				.published
-					span.published__date #[i.icon-calendar] Jan 19, 2018
-				h2.article__title Своих жаренные реторический однажды жизни. Скатился ему, гор, алфавит дал он бросил пустился!
-				ul.tag__list
-					li.tag
-						.tag__icon.i-photoshop
-							+icon('photoshop', '-icon')
-					li.tag
-						.tag__icon.i-illustrator
-							+icon('illustrator', '-icon')
-				.article__content 
-					p.article__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab odit nisi soluta delectus. Nemo voluptas, corporis laboriosam iusto qui optio vero id, quisquam mollitia atque quidem, quam a? Illum!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae inventore libero architecto eos nihil harum, placeat repudiandae ab assumenda blanditiis excepturi? Hic, temporibus, esse repellat facere nulla exercitationem aliquid.
-					p.article__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab odit nisi soluta delectus. Nemo voluptas, corporis laboriosam iusto qui optio vero id, quisquam mollitia atque quidem, quam a? Illum!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae inventore libero architecto eos nihil harum, placeat repudiandae ab assumenda blanditiis excepturi? Hic, temporibus, esse repellat facere nulla exercitationem aliquid.
-					p.article__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab odit nisi soluta delectus. Nemo voluptas, corporis laboriosam iusto qui optio vero id, quisquam mollitia atque quidem, quam a? Illum!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae inventore libero architecto eos nihil harum, placeat repudiandae ab assumenda blanditiis excepturi? Hic, temporibus, esse repellat facere nulla exercitationem aliquid.
-					p.article__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab odit nisi soluta delectus. Nemo voluptas, corporis laboriosam iusto qui optio vero id, quisquam mollitia atque quidem, quam a? Illum!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae inventore libero architecto eos nihil harum, placeat repudiandae ab assumenda blanditiis excepturi? Hic, temporibus, esse repellat facere nulla exercitationem aliquid.
-					p.article__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab odit nisi soluta delectus. Nemo voluptas, corporis laboriosam iusto qui optio vero id, quisquam mollitia atque quidem, quam a? Illum!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae inventore libero architecto eos nihil harum, placeat repudiandae ab assumenda blanditiis excepturi? Hic, temporibus, esse repellat facere nulla exercitationem aliquid.
-
-
+	include ../sections/_header
+	main
+		.single-post
+			.single-post__wrapper
+				article.single-post__inner
+					h2.single-post__title Своих жаренные реторический однажды жизни. Скатился ему, гор, алфавит дал он бросил пустился!
+					ul.published
+						li.published__item
+							span.published__date #[i.icon-calendar] Jan 19, 2018
+						li.published__item
+							span.published__auto LayInMotion
+					ul.tags
+						li.tag.green X-Particles
+						li.tag.cyan Cycles 4D
+						li.tag.blue MoGraph
+						li.tag.yellow C4D
+						li.tag.orange Af
+						li.tag.red Ph
+					.single-post__content
+						.single-post__preview
+							figure.single-post-img
+								img(src="images/img1.jpg", alt="") 
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab odit nisi soluta delectus. Nemo voluptas, corporis laboriosam iusto qui optio vero id, quisquam mollitia atque quidem, quam a? Illum!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae inventore libero architecto eos nihil harum, placeat repudiandae ab assumenda blanditiis excepturi? Hic, temporibus, esse repellat facere nulla exercitationem aliquid.
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab odit nisi soluta delectus. Nemo voluptas, corporis laboriosam iusto qui optio vero id, quisquam mollitia atque quidem, quam a? Illum!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae inventore libero architecto eos nihil harum, placeat repudiandae ab assumenda blanditiis excepturi? Hic, temporibus, esse repellat facere nulla exercitationem aliquid.
+						.single-post__preview
+							.single-post-video
+								iframe(src="https://www.youtube.com/embed/znliDeZOZx0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab odit nisi soluta delectus. Nemo voluptas, corporis laboriosam iusto qui optio vero id, quisquam mollitia atque quidem, quam a? Illum!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae inventore libero architecto eos nihil harum, placeat repudiandae ab assumenda blanditiis excepturi? Hic, temporibus, esse repellat facere nulla exercitationem aliquid.
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab odit nisi soluta delectus. Nemo voluptas, corporis laboriosam iusto qui optio vero id, quisquam mollitia atque quidem, quam a? Illum!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae inventore libero architecto eos nihil harum, placeat repudiandae ab assumenda blanditiis excepturi? Hic, temporibus, esse repellat facere nulla exercitationem aliquid.
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab odit nisi soluta delectus. Nemo voluptas, corporis laboriosam iusto qui optio vero id, quisquam mollitia atque quidem, quam a? Illum!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae inventore libero architecto eos nihil harum, placeat repudiandae ab assumenda blanditiis excepturi? Hic, temporibus, esse repellat facere nulla exercitationem aliquid.
+	include ../sections/_footer

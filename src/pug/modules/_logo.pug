@@ -1,2 +1,9 @@
 .logo
-	h1.logo__name LayInMotion
+	h1.logo__name
+		img(src="images/LayInMotion.png")
+		//picture.shine-white
+			// [if IE 9]><video style="display: none;"><![endif]
+			source( srcset="img/product.png" media="(max-width: 991px)")
+			source( srcset="img/desktop/product.png")
+			// [if IE 9]></video><![endif]
+			<img  srcset="img/desktop/product.png">

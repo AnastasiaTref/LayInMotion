@@ -1,13 +1,4 @@
-@font-face {
-    font-family: 'icomoon';
-    src: url('../fonts/icomoon/icomoon.eot?s4bp2');
-    src: url('../fonts/icomoon/icomoon.eot?s4bp2#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon/icomoon.ttf?s4bp2') format('truetype'),
-    url('../fonts/icomoon/icomoon.woff?s4bp2') format('woff'),
-    url('../fonts/icomoon/icomoon.svg?s4bp2#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
 @font-face {
     font-family: "StalinistOneRegular";
     src: url("../fonts/StalinistOne/StalinistOneRegular/StalinistOneRegular.eot");
@@ -16,4 +7,15 @@
     url("../fonts/StalinistOne/StalinistOneRegular/StalinistOneRegular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon/icomoon.eot');
+    src: url('../fonts/icomoon/icomoon.eot#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon/icomoon.woff') format('woff'),
+        url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }

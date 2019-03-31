@@ -14,8 +14,8 @@
 	outline:0;
 }
 *::selection {
-    /* background: $red;
-    color: #ffffff */;
+    background: $navLightClr;
+    color: $fontPostColor;
 }
 body::-webkit-scrollbar {
     width: 7px;
@@ -28,7 +28,7 @@ body::-webkit-scrollbar-track {
  
 body::-webkit-scrollbar-thumb {
 	border-radius: 10px;
-  	background-color: $darkblue;
+  	background-color: $darkblueColor;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{
@@ -120,7 +120,7 @@ body {
 	color: $mainFontColor;
 	line-height: 1.5;
 	position: relative;
-	background:$darkGrey;
+	background: $mainBg;
 }
 .only-mobile {
 	display: block;

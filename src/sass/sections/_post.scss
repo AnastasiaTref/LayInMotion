@@ -4,22 +4,23 @@
 	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
 	position: relative;
 
-	&__content {
+	&__inner {
 		position: relative;
-		padding: 10px;
+		padding: 10px;		
+	}
+	&__content{
 		text-align: center;
 	}
 	&__title {
 		position: relative;
 		margin-bottom: 15px;
-		text-align: center;
+
 		&--text {
 			text-transform: uppercase;
 			font-family: $fontTitles;
 			font-weight: 700;			
 			font-size: 18px;
-			color: $fontPostColor;
-			
+			color: $orangeColor;
 		}
 	}
 	
@@ -65,13 +66,7 @@
 			height: auto;
 		}
 	}
-	&__info {
-		border-top: 2px solid #b3edfb;
-	    background: $mainPostColor;
-	    box-shadow: inset 0px 4px 12px 0 #081f48a6;
-	    display: flex;
-	    justify-content: space-around;
-	    align-items: center;
-	    padding: 10px;
+	&__tags {
+		padding-top: 15px;
 	}
 }

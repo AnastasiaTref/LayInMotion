@@ -1,0 +1,26 @@
+extends ../_base
+
+block variables
+	- var title = "Article"
+	- var pageTitle = 'article-page'
+
+block content
+	include ../sections/_header
+	main
+		.gallery
+			ul.gallery__list
+				li.gallery__item
+					img(src="images/img1.jpg", alt="")
+				li.gallery__item
+					img(src="images/img2.jpg", alt="")
+				li.gallery__item
+					img(src="images/img3.jpg", alt="")
+				li.gallery__item
+					img(src="images/img4.jpg", alt="")
+				li.gallery__item
+					img(src="images/img5.jpg", alt="")
+				li.gallery__item
+					img(src="images/img6.jpg", alt="")
+				li.gallery__item
+					img(src="images/img7.jpg", alt="")
+	include ../sections/_footer

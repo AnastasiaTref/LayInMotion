@@ -63,10 +63,34 @@
     });
 */
 
-  
+    /*******************************************/
+    /* CHECK FORM FIELD */
+    /*******************************************/
+
+    function floatLable(inputType) {
+        $(inputType).each(function() {
+
+            var $this = $(this);
+            // on focus add cladd active to label
+
+            $this.focus(function() {
+                $this.next().addClass('isActive');
+            });
+            //on blur check field and remove class if needed
+
+            $this.blur(function() {
+                if( !$(this).val() ) {
+                    $this.next().removeClass('isActive');
+                }
+            })
+        })
+    };
+
+    floatLable('.form-control');
 
 
 })(jQuery);
+
 
 function mobileMenu(){
       $('.humburger-icon').on('click', function(event) {
@@ -143,5 +167,6 @@ $(document).ready(function($) {
                 my_animate(circle);
             }
         });
-    }
+    };
+
 });
